@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Photo Coloring — Privacy Policy</title>
+<title>AI Photo Coloring — Privacy Policy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{font-family:-apple-system,Helvetica,Arial,sans-serif;max-width:640px;margin:40px auto;padding:0 20px;line-height:1.6;color:#222}
@@ -14,13 +14,13 @@ th{background:#f5f5f5}
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Photo Coloring</h1>
+<h1>Privacy Policy — AI Photo Coloring</h1>
 <p>Last updated: September 24, 2026</p>
 
-<p>Photo Coloring ("the App") is developed by Lucky Studio. It turns your photos into coloring pages that you color on your device. This policy explains how the App handles your information.</p>
+<p>AI Photo Coloring ("the App", shown as "Photo Coloring" on your home screen) is developed by Lucky Studio. It turns your photos into coloring pages that you color on your device. This policy explains how the App handles your information.</p>
 
 <h2>The short version</h2>
-<p>The App does not collect, store, sell or share your personal data. It has no account or sign-in, no advertising, and no analytics or tracking of any kind. Your photos and artwork are processed and kept on your device and are never uploaded to a server.</p>
+<p>The App has no advertising, no analytics and no tracking of any kind, and it does not sell your data. Your photos and artwork are processed and kept on your device. The one exception is the optional <strong>AI style</strong>: only if you choose it and agree, the photo you pick is sent over the internet to draw the coloring page (see "AI style" below). Every other style works entirely on your device.</p>
 
 <h2>What the App does with your data</h2>
 <table>
@@ -29,21 +29,34 @@ th{background:#f5f5f5}
 <tr><td>Your artwork and projects</td><td>So you can continue and export them</td><td>Stored in the App's private storage on your device. Removed when you delete the project or the App.</td></tr>
 <tr><td>Camera</td><td>Only when you tap "Take Photo"</td><td>Used for the live preview and the photo you take. Nothing is sent anywhere.</td></tr>
 <tr><td>Photo library</td><td>To import a picture you choose and, only if you tap Save, to add your finished artwork</td><td>The App reads only the pictures you select and writes only what you save.</td></tr>
-<tr><td>Purchases</td><td>To unlock Premium</td><td>Handled entirely by Apple (App Store). The App receives no payment details or personal information.</td></tr>
+<tr><td>Photo you send to the AI style (optional)</td><td>To draw the coloring page</td><td>Sent to our server and on to Google's Gemini service, only after you agree. Not kept by us. See "AI style" below.</td></tr>
+<tr><td>Anonymous ID and AI image balance</td><td>To count your AI images and stop abuse</td><td>Stored on our server (Google Cloud / Firebase). Contains no name, email or Apple ID. See "AI style" below.</td></tr>
+<tr><td>Purchases</td><td>To unlock Premium and to buy AI image packs</td><td>Payments are handled entirely by Apple (App Store); the App receives no payment details. For the AI images our server records the Apple transaction identifiers of Premium and AI image pack purchases, tied to your anonymous ID.</td></tr>
 <tr><td>Settings (recent colors, tool options, whether Premium is active)</td><td>To remember your setup</td><td>Stored on your device only.</td></tr>
 </table>
 
 <h2>On-device artificial intelligence</h2>
 <p>The "Sketch" style uses a small neural network that runs locally on your device (Apple Core ML). Your photo is not sent to a server or to any third party to create it. Credits and the licence of the model are shown in the App under Settings &rarr; Third-party notices.</p>
 
+<h2>AI style (optional, uses the internet)</h2>
+<p>The AI style is a Premium feature. The first time you use it the App asks for your agreement to our <a href="terms.html">AI Terms of Use</a> and to this policy; you can withdraw it at any time in Settings.</p>
+<ul>
+<li><strong>What is sent.</strong> Only the photo you chose, scaled down and without location or camera metadata, over an encrypted connection to our server (Google Cloud / Firebase). Our server passes it to Google's Gemini API to generate the drawing and returns the drawing to your device.</li>
+<li><strong>What we keep.</strong> Our server does not save your photo or the drawing; they exist only in memory while the request runs. The drawing is saved on your device with your project.</li>
+<li><strong>What Google does.</strong> Google processes the photo as our service provider under its paid Gemini API terms: it does not use your prompts or results to improve its products, and it may log them for a limited period solely to detect and prevent violations of its policies.</li>
+<li><strong>Anonymous ID and balance.</strong> To count your AI images the App creates a random anonymous ID (Firebase Authentication; no name, email or Apple ID) and our server stores it with your AI image balance, the identifiers of your Premium and AI image pack purchases, the number of AI images made today, and Apple App Attest / Firebase App Check checks that requests come from the genuine App. This is used only to run the feature and prevent abuse; it is never used for advertising or tracking and is never sold.</li>
+<li><strong>Age.</strong> The AI style uses a third-party service whose terms do not allow use by anyone under 18, so the AI style is intended for people 18 and over. Before first use the App asks you to confirm that you are 18 or older. This is a self-declaration; the App cannot verify age.</li>
+<li><strong>Deletion.</strong> Because the ID is anonymous, we cannot look you up by name. To ask us to delete the server-side record, email us (below); we may ask for details such as an Apple purchase receipt to find it.</li>
+</ul>
+
 <h2>Sharing</h2>
-<p>The App does not share data with third parties. When you choose Share or Save, your artwork goes only to the app or the photo library you pick.</p>
+<p>We do not sell your data and do not share it for advertising. The only third parties that handle data are Google (Gemini, and Firebase / Google Cloud for our server) when you use the AI style, and Apple for purchases. When you choose Share or Save, your artwork goes only to the app or the photo library you pick.</p>
 
 <h2>Children's privacy</h2>
-<p>The App is suitable for all ages. Because it collects no data from any user, it does not collect data from children either.</p>
+<p>The on-device features of the App are suitable for all ages and collect no data. The AI style is intended for people 18 and over and asks for an age confirmation before first use (see above). We do not knowingly collect personal information from children; if you believe a child's photo was sent through the AI style and want the server-side record deleted, contact us below.</p>
 
 <h2>Your control</h2>
-<p>Delete any project inside the App, or delete the App to remove all of its data. You can withdraw camera or photo access at any time in iOS Settings &rarr; Photo Coloring.</p>
+<p>Delete any project inside the App, or delete the App to remove its data from your device. You can withdraw camera or photo access at any time in iOS Settings &rarr; Photo Coloring, and withdraw your agreement to the AI style in Settings inside the App. For server-side data, see "Deletion" above.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes, the updated version will be posted at this same URL and the date above will change.</p>
